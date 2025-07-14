@@ -1,0 +1,110 @@
+button {
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.rounded-left-4 {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.modal.fade {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal.fade.show {
+  opacity: 1;
+}
+
+.modal-dialog {
+  transform: translateY(-50px);
+  transition: transform 0.3s ease-out;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: translateY(0);
+}
+
+.modal-backdrop {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+}
+
+.modal-backdrop.fade.show {
+  opacity: 0.5;
+}
+
+.modal-content {
+  transform: scale(0.9);
+  transition: transform 0.3s ease-out;
+}
+
+.modal.fade.show .modal-content {
+  transform: scale(1);
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-close {
+  transition: transform 0.2s ease;
+}
+
+.btn-close:hover {
+  transform: rotate(90deg);
+}
+
+.profile-btn {
+  transition: all 0.3s ease;
+}
+
+.profile-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.modal-body .form-control,
+.modal-body .form-select {
+  transition: all 0.3s ease;
+}
+
+.modal-body .form-control:focus,
+.modal-body .form-select:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-select option:hover {
+  background-color: #f8f9fa;
+}
