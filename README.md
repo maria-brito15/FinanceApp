@@ -23,7 +23,6 @@ This comprehensive personal finance management system leverages modern web techn
   * **Axios**: A robust HTTP client for API requests.
   * **CSS3**: For styling the application.
   * **JavaScript**: Powers the frontend logic.
-  * **Node.js**: The development environment for frontend tools.
 
 -----
 
